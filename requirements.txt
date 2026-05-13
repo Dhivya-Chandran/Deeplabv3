@@ -1,0 +1,8 @@
+# Minimal non-torch Python deps. Install CUDA-enabled PyTorch separately (see below).
+numpy
+Pillow
+opencv-python-headless
+matplotlib
+plotly
+tqdm
+scipy

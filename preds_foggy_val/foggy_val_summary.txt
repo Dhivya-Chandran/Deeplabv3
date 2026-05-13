@@ -1,0 +1,25 @@
+Images: 1500
+Matched GT images: 1500
+Val mean loss: 0.548913
+Val mean pixel accuracy: 0.836144
+Mean IoU: 0.509921
+Per-class IoU:
+  class 0: 0.906859
+  class 1: 0.592539
+  class 2: 0.748597
+  class 3: 0.248435
+  class 4: 0.370803
+  class 5: 0.430788
+  class 6: 0.491841
+  class 7: 0.628572
+  class 8: 0.670564
+  class 9: 0.444722
+  class 10: 0.426377
+  class 11: 0.693211
+  class 12: 0.489783
+  class 13: 0.737181
+  class 14: 0.407212
+  class 15: 0.376867
+  class 16: 0.348903
+  class 17: 0.062799
+  class 18: 0.612445

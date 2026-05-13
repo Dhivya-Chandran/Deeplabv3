@@ -1,0 +1,27 @@
+Val images: 2975
+Mean loss: 170.946848
+Mean pixel accuracy: 0.413746
+Mean IoU: 0.036741
+Multi-scale testing: True
+Flip testing: True
+TTA scales: [0.75, 1.0, 1.25]
+Per-class IoU:
+  class 0: 0.423763
+  class 1: 0.000013
+  class 2: 0.068415
+  class 3: 0.000000
+  class 4: 0.000000
+  class 5: 0.000000
+  class 6: 0.000126
+  class 7: 0.007429
+  class 8: 0.142414
+  class 9: 0.000000
+  class 10: 0.000000
+  class 11: 0.000001
+  class 12: 0.000000
+  class 13: 0.055312
+  class 14: 0.000000
+  class 15: 0.000598
+  class 16: 0.000000
+  class 17: 0.000000
+  class 18: 0.000000

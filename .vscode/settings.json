@@ -1,0 +1,5 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.defaultInterpreterPath": "/home/dchandr4/venvs/myenv/bin/python",
+    "python.terminal.activateEnvironment": true
+}

@@ -1,0 +1,417 @@
+Fri Mar 27 12:40:01 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:19:00.0 Off |                    0 |
+| N/A   35C    P0             70W /  700W |       0MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[INFO]Arguments read successfully!
+[INFO]Train Mode.
+[INFO]Hyperparameters Loaded
+[INFO]epochs=100 | batch_size=4 | lr=0.001 | optimizer=sgd | num_workers=4
+[INFO]Loading class weights...
+[INFO]Cache not found. Computing from first batch...
+[INFO]To avoid this in future runs, execute:
+  python cache_class_weights.py --dataset cityscapes --mask_path datasets/Cityscapes/gtFine_trainIds/train
+[WARN]Failed to compute class weights: boolean index did not match indexed array along axis 0; size of axis is 19 but size of corresponding boolean axis is 256
+[INFO]Loading Cityscapes dataset with 4 workers...
+
+[INFO]Starting Training...
+
+-------------------- Epoch 1/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 1/100  |  Loss: 0.667047
+ ✓ Best loss model saved (Loss: 0.667047)
+
+-------------------- Epoch 2/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 2/100  |  Loss: 0.412015
+ ✓ Best loss model saved (Loss: 0.412015)
+
+-------------------- Epoch 3/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 3/100  |  Loss: 0.353881
+ ✓ Best loss model saved (Loss: 0.353881)
+
+-------------------- Epoch 4/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 4/100  |  Loss: 0.321735
+ ✓ Best loss model saved (Loss: 0.321735)
+
+-------------------- Epoch 5/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 5/100  |  Loss: 0.297567
+ ✓ Best loss model saved (Loss: 0.297567)
+
+-------------------- Epoch 6/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 6/100  |  Loss: 0.282516
+ ✓ Best loss model saved (Loss: 0.282516)
+
+-------------------- Epoch 7/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 7/100  |  Loss: 0.269608
+ ✓ Best loss model saved (Loss: 0.269608)
+
+-------------------- Epoch 8/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 8/100  |  Loss: 0.258112
+ ✓ Best loss model saved (Loss: 0.258112)
+
+-------------------- Epoch 9/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 9/100  |  Loss: 0.248648
+ ✓ Best loss model saved (Loss: 0.248648)
+
+-------------------- Epoch 10/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 10/100  |  Loss: 0.241501
+ ✓ Best loss model saved (Loss: 0.241501)
+[INFO] Running validation for epoch 10...
+[INFO] Loading checkpoint...
+[INFO] Checkpoint loaded
+[INFO] Model loaded on device: cuda:0
+[INFO] Found 500 validation pairs
+[INFO] Processed 50/500
+[INFO] Processed 100/500
+[INFO] Processed 150/500
+[INFO] Processed 200/500
+[INFO] Processed 250/500
+[INFO] Processed 300/500
+[INFO] Processed 350/500
+[INFO] Processed 400/500
+[INFO] Processed 450/500
+[INFO] Processed 500/500
+[INFO] Val mean loss: 13775.621242
+[INFO] Val mean pixel accuracy: 0.370580
+[INFO] Mean IoU: 0.018061
+[INFO] Saved curves: val_loss_curve.png, val_acc_curve.png
+[INFO] Saved random samples grid: random_samples.png
+[INFO] All predictions saved in: preds_val/epoch_10
+[INFO] Validation evaluation complete!
+[INFO] Validation mIoU: 0.018061
+[INFO] Validation complete for epoch 10
+ ✓ Best mIoU model saved (mIoU: 0.018061)
+
+-------------------- Epoch 11/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 11/100  |  Loss: 0.234073
+ ✓ Best loss model saved (Loss: 0.234073)
+
+-------------------- Epoch 12/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 12/100  |  Loss: 0.229528
+ ✓ Best loss model saved (Loss: 0.229528)
+
+-------------------- Epoch 13/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 13/100  |  Loss: 0.223694
+ ✓ Best loss model saved (Loss: 0.223694)
+
+-------------------- Epoch 14/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 14/100  |  Loss: 0.219759
+ ✓ Best loss model saved (Loss: 0.219759)
+
+-------------------- Epoch 15/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 15/100  |  Loss: 0.214856
+ ✓ Best loss model saved (Loss: 0.214856)
+
+-------------------- Epoch 16/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 16/100  |  Loss: 0.210456
+ ✓ Best loss model saved (Loss: 0.210456)
+
+-------------------- Epoch 17/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 17/100  |  Loss: 0.206853
+ ✓ Best loss model saved (Loss: 0.206853)
+
+-------------------- Epoch 18/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 18/100  |  Loss: 0.203993
+ ✓ Best loss model saved (Loss: 0.203993)
+
+-------------------- Epoch 19/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 19/100  |  Loss: 0.200858
+ ✓ Best loss model saved (Loss: 0.200858)
+
+-------------------- Epoch 20/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 20/100  |  Loss: 0.198622
+ ✓ Best loss model saved (Loss: 0.198622)
+[INFO] Running validation for epoch 20...
+[INFO] Loading checkpoint...
+[INFO] Checkpoint loaded
+[INFO] Model loaded on device: cuda:0
+[INFO] Found 500 validation pairs
+[INFO] Processed 50/500
+[INFO] Processed 100/500
+[INFO] Processed 150/500
+[INFO] Processed 200/500
+[INFO] Processed 250/500
+[INFO] Processed 300/500
+[INFO] Processed 350/500
+[INFO] Processed 400/500
+[INFO] Processed 450/500
+[INFO] Processed 500/500
+[INFO] Val mean loss: 7496.667575
+[INFO] Val mean pixel accuracy: 0.364957
+[INFO] Mean IoU: 0.019289
+[INFO] Saved curves: val_loss_curve.png, val_acc_curve.png
+[INFO] Saved random samples grid: random_samples.png
+[INFO] All predictions saved in: preds_val/epoch_20
+[INFO] Validation evaluation complete!
+[INFO] Validation mIoU: 0.019289
+[INFO] Validation complete for epoch 20
+ ✓ Best mIoU model saved (mIoU: 0.019289)
+
+-------------------- Epoch 21/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 21/100  |  Loss: 0.195381
+ ✓ Best loss model saved (Loss: 0.195381)
+
+-------------------- Epoch 22/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 22/100  |  Loss: 0.192678
+ ✓ Best loss model saved (Loss: 0.192678)
+
+-------------------- Epoch 23/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 23/100  |  Loss: 0.190305
+ ✓ Best loss model saved (Loss: 0.190305)
+
+-------------------- Epoch 24/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 24/100  |  Loss: 0.187959
+ ✓ Best loss model saved (Loss: 0.187959)
+
+-------------------- Epoch 25/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 25/100  |  Loss: 0.185851
+ ✓ Best loss model saved (Loss: 0.185851)
+
+-------------------- Epoch 26/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 26/100  |  Loss: 0.183282
+ ✓ Best loss model saved (Loss: 0.183282)
+
+-------------------- Epoch 27/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 27/100  |  Loss: 0.181474
+ ✓ Best loss model saved (Loss: 0.181474)
+
+-------------------- Epoch 28/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 28/100  |  Loss: 0.179136
+ ✓ Best loss model saved (Loss: 0.179136)
+
+-------------------- Epoch 29/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 29/100  |  Loss: 0.177771
+ ✓ Best loss model saved (Loss: 0.177771)
+
+-------------------- Epoch 30/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 30/100  |  Loss: 0.175797
+ ✓ Best loss model saved (Loss: 0.175797)
+[INFO] Running validation for epoch 30...
+[INFO] Loading checkpoint...
+[INFO] Checkpoint loaded
+[INFO] Model loaded on device: cuda:0
+[INFO] Found 500 validation pairs
+[INFO] Processed 50/500
+[INFO] Processed 100/500
+[INFO] Processed 150/500
+[INFO] Processed 200/500
+[INFO] Processed 250/500
+[INFO] Processed 300/500
+[INFO] Processed 350/500
+[INFO] Processed 400/500
+[INFO] Processed 450/500
+[INFO] Processed 500/500
+[INFO] Val mean loss: 12667.734620
+[INFO] Val mean pixel accuracy: 0.369479
+[INFO] Mean IoU: 0.018218
+[INFO] Saved curves: val_loss_curve.png, val_acc_curve.png
+[INFO] Saved random samples grid: random_samples.png
+[INFO] All predictions saved in: preds_val/epoch_30
+[INFO] Validation evaluation complete!
+[INFO] Validation mIoU: 0.018218
+[INFO] Validation complete for epoch 30
+[INFO] No improvement for 10 epochs (patience: 30)
+
+-------------------- Epoch 31/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 31/100  |  Loss: 0.175110
+ ✓ Best loss model saved (Loss: 0.175110)
+
+-------------------- Epoch 32/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 32/100  |  Loss: 0.173015
+ ✓ Best loss model saved (Loss: 0.173015)
+
+-------------------- Epoch 33/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 33/100  |  Loss: 0.171258
+ ✓ Best loss model saved (Loss: 0.171258)
+
+-------------------- Epoch 34/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 34/100  |  Loss: 0.169498
+ ✓ Best loss model saved (Loss: 0.169498)
+
+-------------------- Epoch 35/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 35/100  |  Loss: 0.168500
+ ✓ Best loss model saved (Loss: 0.168500)
+
+-------------------- Epoch 36/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 36/100  |  Loss: 0.166715
+ ✓ Best loss model saved (Loss: 0.166715)
+
+-------------------- Epoch 37/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 37/100  |  Loss: 0.165863
+ ✓ Best loss model saved (Loss: 0.165863)
+
+-------------------- Epoch 38/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 38/100  |  Loss: 0.164164
+ ✓ Best loss model saved (Loss: 0.164164)
+
+-------------------- Epoch 39/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 39/100  |  Loss: 0.162893
+ ✓ Best loss model saved (Loss: 0.162893)
+
+-------------------- Epoch 40/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 40/100  |  Loss: 0.161887
+ ✓ Best loss model saved (Loss: 0.161887)
+[INFO] Running validation for epoch 40...
+[INFO] Loading checkpoint...
+[INFO] Checkpoint loaded
+[INFO] Model loaded on device: cuda:0
+[INFO] Found 500 validation pairs
+[INFO] Processed 50/500
+[INFO] Processed 100/500
+[INFO] Processed 150/500
+[INFO] Processed 200/500
+[INFO] Processed 250/500
+[INFO] Processed 300/500
+[INFO] Processed 350/500
+[INFO] Processed 400/500
+[INFO] Processed 450/500
+[INFO] Processed 500/500
+[INFO] Val mean loss: 8663.697837
+[INFO] Val mean pixel accuracy: 0.371024
+[INFO] Mean IoU: 0.017967
+[INFO] Saved curves: val_loss_curve.png, val_acc_curve.png
+[INFO] Saved random samples grid: random_samples.png
+[INFO] All predictions saved in: preds_val/epoch_40
+[INFO] Validation evaluation complete!
+[INFO] Validation mIoU: 0.017967
+[INFO] Validation complete for epoch 40
+[INFO] No improvement for 20 epochs (patience: 30)
+
+-------------------- Epoch 41/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 41/100  |  Loss: 0.160311
+ ✓ Best loss model saved (Loss: 0.160311)
+
+-------------------- Epoch 42/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 42/100  |  Loss: 0.159342
+ ✓ Best loss model saved (Loss: 0.159342)
+
+-------------------- Epoch 43/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 43/100  |  Loss: 0.158322
+ ✓ Best loss model saved (Loss: 0.158322)
+
+-------------------- Epoch 44/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 44/100  |  Loss: 0.157288
+ ✓ Best loss model saved (Loss: 0.157288)
+
+-------------------- Epoch 45/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 45/100  |  Loss: 0.156196
+ ✓ Best loss model saved (Loss: 0.156196)
+
+-------------------- Epoch 46/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 46/100  |  Loss: 0.155829
+ ✓ Best loss model saved (Loss: 0.155829)
+
+-------------------- Epoch 47/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 47/100  |  Loss: 0.154160
+ ✓ Best loss model saved (Loss: 0.154160)
+
+-------------------- Epoch 48/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 48/100  |  Loss: 0.153568
+ ✓ Best loss model saved (Loss: 0.153568)
+
+-------------------- Epoch 49/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 49/100  |  Loss: 0.152008
+ ✓ Best loss model saved (Loss: 0.152008)
+
+-------------------- Epoch 50/100 --------------------
+Learning rate: 1.000000e-03
+Epoch 50/100  |  Loss: 0.150945
+ ✓ Best loss model saved (Loss: 0.150945)
+[INFO] Running validation for epoch 50...
+[INFO] Loading checkpoint...
+[INFO] Checkpoint loaded
+[INFO] Model loaded on device: cuda:0
+[INFO] Found 500 validation pairs
+[INFO] Processed 50/500
+[INFO] Processed 100/500
+[INFO] Processed 150/500
+[INFO] Processed 200/500
+[INFO] Processed 250/500
+[INFO] Processed 300/500
+[INFO] Processed 350/500
+[INFO] Processed 400/500
+[INFO] Processed 450/500
+[INFO] Processed 500/500
+[INFO] Val mean loss: 11445.576346
+[INFO] Val mean pixel accuracy: 0.372006
+[INFO] Mean IoU: 0.017454
+[INFO] Saved curves: val_loss_curve.png, val_acc_curve.png
+[INFO] Saved random samples grid: random_samples.png
+[INFO] All predictions saved in: preds_val/epoch_50
+[INFO] Validation evaluation complete!
+[INFO] Validation mIoU: 0.017454
+[INFO] Validation complete for epoch 50
+[INFO] No improvement for 30 epochs (patience: 30)
+
+[INFO] Early stopping triggered after 50 epochs
+
+==================================================
+Training Complete!
+Best Loss Achieved: 0.150945
+Best mIoU Achieved: 0.019289
+Saved files: best_model.pth, best_miou_model.pth
+==================================================
+
